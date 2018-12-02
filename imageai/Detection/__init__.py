@@ -87,6 +87,7 @@ class ObjectDetection:
              [373., 326.]])
         self.__yolo_model_image_size = (416, 416)
         self.__yolo_boxes, self.__yolo_scores, self.__yolo_classes = "", "", ""
+        K.clear_session()
         self.sess = K.get_session()
 
         # Unique instance variables for TinyYOLOv3.
